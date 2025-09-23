@@ -5,7 +5,7 @@ version: "3.0.0"
 require-dbt-version: ">=1.5.0"
 
 dbt-cloud:
-  project-id: 275557 # Put your project id here
+  project-id: 454356 # Put your project id here
 
 profile: default # Put your profile here
 
@@ -15,8 +15,6 @@ test-paths: ["data-tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-
-target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
@@ -36,3 +34,5 @@ models:
       +materialized: view
     marts:
       +materialized: table
+flags:
+  require_generic_test_arguments_property: true
