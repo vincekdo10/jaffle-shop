@@ -3,7 +3,13 @@ packages:
     version: 1.1.1
   - package: godatadriven/dbt_date
     version: 0.10.0
+<<<<<<< HEAD
+  - git: "https://github.com/dbt-labs/dbt-audit-helper.git"
+    revision: main
+  - git: https://{{env_var('DBT_ENV_SECRET')}}@github.com/dbt-labs/model-build-reporter.git
+=======
   # - git: "https://github.com/dbt-labs/dbt-audit-helper.git"
   #   revision: main
   - git: "https://{{env_var('DBT_ENV_SECRET')}}@github.com/dbt-labs/model-build-reporter.git"
+>>>>>>> 1fea53085cd18b6313c0b196fd2e296e43250496
     revision: main

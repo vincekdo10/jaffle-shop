@@ -5,7 +5,10 @@ packages:
   - name: dbt_date
     package: godatadriven/dbt_date
     version: 0.10.0
+  - git: https://github.com/dbt-labs/dbt-audit-helper.git
+    name: audit_helper
+    revision: 014af559efd9dd1fa6551cb348fcc6d4def9a1e7
   - git: https://{{env_var('DBT_ENV_SECRET')}}@github.com/dbt-labs/model-build-reporter.git
     name: dbt_model_build_reporter
     revision: 24a286e4ba3c61e453773e37eb768463cd789a79
-sha1_hash: a7c2d81a146f34ed7b51b7b64b93aac41c7b11eb
+sha1_hash: 1de5d204055712ecbb63ecc79c6bc209256ebd05
