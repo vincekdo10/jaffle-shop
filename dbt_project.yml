@@ -21,6 +21,8 @@ clean-targets:
 
 vars:
   "dbt_date:time_zone": "America/Los_Angeles"
+  dbt_model_build_logger:
+    model_monitor_start_date: "2025-09-23"
 
 seeds:
   jaffle_shop:
@@ -36,3 +38,4 @@ models:
       +materialized: table
 flags:
   require_generic_test_arguments_property: true
+query-comment: "{{ dbt_model_build_reporter.query_comment(node) }}"

@@ -10,5 +10,5 @@ packages:
     revision: 014af559efd9dd1fa6551cb348fcc6d4def9a1e7
   - git: https://{{env_var('DBT_ENV_SECRET')}}@github.com/dbt-labs/model-build-reporter.git
     name: dbt_model_build_reporter
-    revision: 24a286e4ba3c61e453773e37eb768463cd789a79
-sha1_hash: 1de5d204055712ecbb63ecc79c6bc209256ebd05
+    revision: 7ba54a63f5a551a7df25998b81556db50658e4e4
+sha1_hash: 21b86e78c81e78060fad81963886f74abb34304f
